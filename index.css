@@ -1,0 +1,238 @@
+body {
+  /* background-color: #121212; */
+  background: url(./images/bgc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+p {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  color: aliceblue;
+}
+h2 {
+  margin: 0;
+}
+
+/* WELCOMEPAGE */
+#welcomePage {
+  background: url(./images/main-screen__bgc.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 62vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 22vh;
+}
+header {
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 5vw 0 5vw;
+}
+#headerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8vw;
+  height: 5vw;
+  opacity: 0.95;
+}
+header img {
+  width: 2.2vw;
+}
+header a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 2.89vw;
+  font-size: 0.9vw;
+}
+header button {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  color: aliceblue;
+  width: 9vw;
+  height: 2.5vw;
+  border-radius: 2vw;
+  border: 0;
+  font-size: 0.8vw;
+}
+.welcomeBanner {
+  padding-left: 16vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+#WelcomeCards {
+  display: flex;
+  gap: 1.5vw;
+}
+.welcomeBanner h1 {
+  font-size: 3.2vw;
+  line-height: 4.7vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.WelcomeCard {
+  background-color: #121212;
+  width: 6vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2vw;
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.WelcomeCard h2 {
+  font-size: 1.8vw;
+}
+.WelcomeCard p {
+  font-size: 0.85vw;
+  opacity: 0.7;
+  margin-bottom: 0.5vw;
+}
+
+/* COURSEORDER */
+#CourseOrder {
+  background-color: #121212;
+  color: aliceblue;
+  height: 7.5vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 5vw;
+  font-family: Roboto;
+}
+#courseBut {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  color: aliceblue;
+  font-size: 0.8vw;
+  letter-spacing: 0.05vw;
+  width: 10vw;
+  height: 2.5vw;
+  border-radius: 2vw;
+  border: 0;
+}
+.courseFlexBox {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.94vw;
+  gap: 2vw;
+}
+#CourseOrder p {
+  opacity: 0.5;
+  font-size: 0.85vw;
+  font-weight: 400;
+  font-family: Roboto;
+}
+#CourseOrder h1 {
+  font-size: 0.8vw;
+}
+.courseEarned {
+  display: flex;
+  gap: 2.2vw;
+}
+.courseLine {
+  background-color: aliceblue;
+  width: 40vw;
+  height: 0.35vw;
+}
+#courseLineGradient {
+  width: 6.4vw;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+
+/* ACTIVITIES */
+#activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.5vw;
+  height: 50vw;
+  width: 65vw;
+  margin: 0 auto;
+  font-family: Roboto;
+}
+#activitiesComputerImg {
+  position: absolute;
+  margin-top: 5vw;
+  margin-left: 2vw;
+}
+#activitiesText h1 {
+  font-size: 2.5vw;
+  opacity: 0.95;
+  font-weight: 900;
+}
+#activitiesText p {
+  margin-top: 3.6vw;
+  margin-bottom: 2vw;
+  font-size: 0.95vw;
+  line-height: 1.5vw;
+  color: aliceblue;
+  max-width: 35vw;
+  font-weight: 100;
+  opacity: 0.9;
+}
+
+/* START */
+#start {
+  height: 35vw;
+  color: aliceblue;
+  width: 65vw;
+  margin: 0 auto;
+  font-family: Roboto;
+}
+#start p {
+  opacity: 0.5;
+}
+#startText {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 3vw;
+}
+#startTextLogo {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+#startCards {
+  margin-top: 5vw;
+  display: flex;
+}
+.startCardsStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vw;
+  padding: 1.5vw 0 1.5vw 0;
+}
+.startCard h1 {
+  font-size: 1.5vw;
+}
+.startCard p {
+  font-size: 0.8vw;
+  font-weight: lighter;
+  max-width: 88%;
+  line-height: 1.2vw;
+}
