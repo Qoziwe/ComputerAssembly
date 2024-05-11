@@ -1,9 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   /* background-color: #121212; */
   background: url(./images/bgc.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  width: 0;
 }
 a {
   text-decoration: none;
@@ -26,7 +35,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  height: 62vh;
+  height: 33.6vw;
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
@@ -196,7 +205,7 @@ header button {
 
 /* START */
 #start {
-  height: 35vw;
+  height: 34vw;
   color: aliceblue;
   width: 65vw;
   margin: 0 auto;
@@ -235,4 +244,278 @@ header button {
   font-weight: lighter;
   max-width: 88%;
   line-height: 1.2vw;
+}
+
+/* PROFESSION */
+#profession {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40vw;
+  width: 65vw;
+  margin: 0 auto;
+  font-family: Roboto;
+  /* margin-bottom: 5vw; */
+}
+#professionCards {
+  display: flex;
+  color: aliceblue;
+  margin-top: 5vw;
+  gap: 4vw;
+}
+.professionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1.7vw;
+  width: 20vw;
+}
+.professionCard p {
+  font-size: 0.84vw;
+  opacity: 0.7;
+  font-weight: 100;
+  line-height: 1.4vw;
+}
+.professionCard h1 {
+  font-size: 1.3vw;
+}
+.professionCard img {
+  width: 5vw;
+  margin: 0 auto;
+  margin-bottom: 2vw;
+}
+
+/* PARTNERS */
+#partners {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 65vw;
+  margin: 0 auto;
+  height: 45vw;
+  font-family: Roboto;
+  gap: 5vw;
+}
+#partnersHeading {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  /* justify-content: center; */
+}
+#partnersCards {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #451046; */
+  height: 15vw;
+  margin-bottom: 8vw;
+}
+.partnersCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16.1vw;
+  height: 7.45vw;
+  /* border: 0.1vw solid rgba(240, 248, 255, 0.582); */
+}
+.partnersCard img {
+  width: 8vw;
+}
+
+/* PROGRAMM */
+#programm {
+  height: 65vw;
+  width: 65vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Roboto;
+  padding-bottom: 10vw;
+}
+#programmHeading {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  gap: 3vw;
+}
+#programmHeading h1 {
+  margin-top: 1vw;
+  font-size: 3vw;
+}
+#programmHeading p {
+  color: aliceblue;
+  font-size: 0.85vw;
+  opacity: 0.5;
+  max-width: 25vw;
+  text-align: center;
+  margin-bottom: 6vw;
+}
+.programmTableFloor {
+  display: flex;
+  height: 6vw;
+}
+.programmTableFloor div {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+.TableBox {
+  width: 15vw;
+  height: 6vw;
+  gap: 20%;
+}
+.TableBox p {
+  color: aliceblue;
+  font-size: 0.8vw;
+  opacity: 0.5;
+}
+.TableBox h2 {
+  color: aliceblue;
+  font-size: 1vw;
+  font-weight: 100;
+}
+.tableImg1 {
+  /* background-color: red; */
+  width: 2vw;
+}
+.tableImg1 hr {
+  height: 0.1vw;
+  width: 100%;
+  border: none;
+  background-color: aliceblue;
+  opacity: 0.5;
+  /* border-radius: 1vw 0 0 1vw; */
+}
+.tableVerticalImg {
+  width: 0.5vw;
+  background: linear-gradient(90deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+
+/* TEACHERS */
+#teachers {
+  width: 65vw;
+  margin: 0 auto;
+  height: 40vw;
+  font-family: Roboto;
+}
+#teachersHeading {
+  display: flex;
+  align-items: end;
+  gap: 2vw;
+  margin-bottom: 8vw;
+}
+#teachersHeading h1 {
+  font-size: 2.4vw;
+  letter-spacing: 0.2vw;
+}
+#teacherCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12vw;
+}
+.teacherCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  gap: 1.5vw;
+}
+.teacherCard img {
+  width: 10.5vw;
+}
+.teacherCard h2 {
+  font-size: 1.2vw;
+  margin-top: 1vw;
+}
+.teacherCard p {
+  font-size: 0.85vw;
+  opacity: 0.8;
+}
+.teacherCard button {
+  width: 8vw;
+  height: 2vw;
+  border: 0.1vw solid aliceblue;
+  color: aliceblue;
+  background-color: #12121200;
+  border-radius: 1vw;
+}
+
+/* FOOTER */
+#footer {
+  height: 25vw;
+  width: 65vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: Roboto;
+  gap: 2vw;
+}
+#footer h1 {
+  font-size: 2.6vw;
+}
+#footer p {
+  font-size: 1vw;
+  opacity: 0.5;
+  text-align: center;
+  font-weight: 100;
+}
+#footerInput {
+  background-color: #97979760;
+  display: flex;
+  height: 2.2vw;
+  border-radius: 3vw;
+}
+#footerInput input {
+  background-color: #12121200;
+  width: 18vw;
+  height: 2.1vw;
+  border: none;
+  padding: 0;
+  border-radius: 1vw;
+  color: aliceblue;
+  font-family: Roboto;
+  font-size: 1vw;
+  outline: 0;
+  padding-left: 1vw;
+}
+#footerInput input:active,
+.example:hover,
+.example:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+#footerInput button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+
+  width: 8.5vw;
+  height: 2.2vw;
+  border-radius: 3vw;
+  border: 0;
+  color: aliceblue;
+  font-size: 0.9vw;
+}
+#footerLinks {
+  display: flex;
+  gap: 1.5vw;
+  margin-bottom: 3vw;
+}
+#footerLinks img {
+  width: 2.8vw;
+}
+#footerLinks p {
+  position: absolute;
+  margin-left: 26vw;
+  opacity: 0.9;
+  bottom: -299vw;
 }
