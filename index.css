@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+/*#region Code Without Media*/
 body {
   /* background-color: #121212; */
   background: url(./images/bgc.png);
@@ -29,7 +30,7 @@ h2 {
   margin: 0;
 }
 
-/* WELCOMEPAGE */
+/*#region WELCOMEPAGE */
 #welcomePage {
   background: url(./images/main-screen__bgc.png);
   background-repeat: no-repeat;
@@ -65,6 +66,9 @@ header a {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-left: 2.89vw;
   font-size: 0.9vw;
+}
+#headerNavbar {
+  display: none;
 }
 header button {
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
@@ -112,8 +116,9 @@ header button {
   opacity: 0.7;
   margin-bottom: 0.5vw;
 }
+/*#endregion*/
 
-/* COURSEORDER */
+/*#region  COURSEORDER */
 #CourseOrder {
   background-color: #121212;
   color: aliceblue;
@@ -170,8 +175,9 @@ header button {
   width: 6.4vw;
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 }
+/*#endregion*/
 
-/* ACTIVITIES */
+/*#region ACTIVITIES */
 #activities {
   display: flex;
   justify-content: center;
@@ -186,6 +192,12 @@ header button {
   position: absolute;
   margin-top: 5vw;
   margin-left: 2vw;
+  width: 24vw;
+  filter: drop-shadow(-1vw 2vw 1vw rgb(19, 19, 19));
+  z-index: 1;
+}
+#activitiesIMG img:nth-child(2) {
+  width: 28vw;
 }
 #activitiesText h1 {
   font-size: 2.5vw;
@@ -202,8 +214,9 @@ header button {
   font-weight: 100;
   opacity: 0.9;
 }
+/*#endregion*/
 
-/* START */
+/*#region START */
 #start {
   height: 34vw;
   color: aliceblue;
@@ -220,10 +233,21 @@ header button {
   justify-content: left;
   gap: 3vw;
 }
+#startText p {
+  max-width: 20vw;
+  font-size: 0.89vw;
+}
 #startTextLogo {
   display: flex;
   align-items: center;
   gap: 2vw;
+}
+#startTextLogo img {
+  width: 4.1vw;
+}
+#startTextLogo h1 {
+  font-size: 2.4vw;
+  letter-spacing: 0.2vw;
 }
 #startCards {
   margin-top: 5vw;
@@ -245,8 +269,9 @@ header button {
   max-width: 88%;
   line-height: 1.2vw;
 }
+/*#endregion*/
 
-/* PROFESSION */
+/*#region PROFESSION */
 #profession {
   display: flex;
   justify-content: center;
@@ -257,6 +282,12 @@ header button {
   margin: 0 auto;
   font-family: Roboto;
   /* margin-bottom: 5vw; */
+}
+#professionComment {
+  display: none;
+}
+#profession h1 {
+  font-size: 2.7vw;
 }
 #professionCards {
   display: flex;
@@ -278,7 +309,7 @@ header button {
   font-weight: 100;
   line-height: 1.4vw;
 }
-.professionCard h1 {
+.professionCard h2 {
   font-size: 1.3vw;
 }
 .professionCard img {
@@ -286,8 +317,9 @@ header button {
   margin: 0 auto;
   margin-bottom: 2vw;
 }
+/*#endregion*/
 
-/* PARTNERS */
+/*#region PARTNERS */
 #partners {
   display: flex;
   flex-direction: column;
@@ -304,6 +336,13 @@ header button {
   gap: 2vw;
   align-items: center;
   /* justify-content: center; */
+}
+#partnersHeading h1 {
+  font-size: 2.4vw;
+  letter-spacing: 0.2vw;
+}
+#partnersHeading img {
+  width: 7vw;
 }
 #partnersCards {
   display: flex;
@@ -323,8 +362,9 @@ header button {
 .partnersCard img {
   width: 8vw;
 }
+/*#endregion*/
 
-/* PROGRAMM */
+/*#region PROGRAMM */
 #programm {
   height: 65vw;
   width: 65vw;
@@ -396,8 +436,9 @@ header button {
   width: 0.5vw;
   background: linear-gradient(90deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
+/*#endregion*/
 
-/* TEACHERS */
+/*#region TEACHERS */
 #teachers {
   width: 65vw;
   margin: 0 auto;
@@ -446,9 +487,11 @@ header button {
   color: aliceblue;
   background-color: #12121200;
   border-radius: 1vw;
+  font-size: 1vw;
 }
+/*#endregion*/
 
-/* FOOTER */
+/*#region FOOTER */
 #footer {
   height: 25vw;
   width: 65vw;
@@ -515,7 +558,249 @@ header button {
 }
 #footerLinks p {
   position: absolute;
-  margin-left: 26vw;
+  margin-left: 20vw;
+  margin-top: 0.65 vw;
   opacity: 0.9;
-  bottom: -299vw;
+  /* top: 350vh; */
 }
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region Code With Media */
+@media (max-width: 700px) {
+  /*#region WELCOMPAGE */
+  #welcomePage {
+    background-position: bottom -12vw left -110vw;
+    height: 90vw;
+    padding-bottom: 30vw;
+  }
+  header {
+    background-color: #121212;
+    height: 20vw;
+    padding: 1vw 13vw 0 13vw;
+  }
+  #headerLinks {
+    display: none;
+  }
+  header img {
+    width: 8.5vw;
+  }
+  header button {
+    display: none;
+  }
+
+  #headerNavbar {
+    display: block;
+  }
+
+  #headerNavbar button {
+    display: block;
+    width: 14vw;
+    height: 10vw;
+    border-radius: 4vw;
+    font-size: 2vw;
+  }
+  #headerNavbar button img {
+    width: 6.5vw;
+  }
+  .welcomeBanner {
+    padding-left: 10vw;
+    gap: 15vw;
+  }
+  .welcomeBanner h1 {
+    font-size: 7vw;
+    line-height: 4.7vw;
+    max-width: 60vw;
+  }
+  .WelcomeCard {
+    width: 12vw;
+    height: 12vw;
+    gap: 0.2vw;
+  }
+  .WelcomeCard h2 {
+    font-size: 3.9vw;
+  }
+  .WelcomeCard p {
+    font-size: 2vw;
+    opacity: 0.7;
+    margin-bottom: 0.5vw;
+  }
+  /*#endregion*/
+
+  /*#region COURSEORDER */
+  #CourseOrder {
+    height: 80vw;
+    width: 84vw;
+    padding: 0 8vw 0 8vw;
+    flex-direction: column;
+    gap: 8vw;
+  }
+  #courseBut {
+    font-size: 3vw;
+    width: 30vw;
+    height: 8vw;
+    border-radius: 4vw;
+  }
+  #CourseOrder p {
+    opacity: 0.5;
+    font-size: 3.5vw;
+  }
+  #CourseOrder h1 {
+    font-size: 3.5vw;
+  }
+  #info {
+    justify-content: left;
+    align-items: start;
+    gap: 8vw;
+    line-height: 6vw;
+  }
+  .courseFlexBox2 div {
+    margin-bottom: 2vw;
+  }
+  .courseLine {
+    background-color: aliceblue;
+    width: 84vw;
+    height: 2vw;
+    border-radius: 1vw;
+  }
+  #courseLineGradient {
+    width: 13.44vw;
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    border-radius: 1vw 0 0 1vw;
+    margin: 0;
+  }
+  /*#endregion*/
+
+  /*#region ACTIVITIES */
+  #activities {
+    gap: 6.5vw;
+    height: 160vw;
+    width: 84vw;
+    flex-direction: column;
+  }
+  #activitiesComputerImg {
+    width: 45vw;
+  }
+  #activitiesIMG {
+    margin-bottom: 5vw;
+  }
+  #activitiesIMG img:nth-child(2) {
+    width: 50vw;
+  }
+  #activitiesText h1 {
+    font-size: 5vw;
+  }
+  #activitiesText p {
+    margin-top: 3.6vw;
+    margin-bottom: 2vw;
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    letter-spacing: 0.5vw;
+    max-width: 84vw;
+  }
+  /*#endregion*/
+
+  /*#region START */
+  #start {
+    height: 110vw;
+    width: 84vw;
+  }
+  #startTextLogo img {
+    width: 10vw;
+  }
+  #startTextLogo h1 {
+    font-size: 4.2vw;
+    letter-spacing: 0.2vw;
+  }
+  #startText p {
+    font-size: 3vw;
+    max-width: 60vw;
+  }
+  #startCards {
+    margin-top: 8vw;
+  }
+  .startCardsStatus {
+    height: 12vw;
+    padding: 1.5vw 0 1.5vw 0;
+  }
+  .startCard h1 {
+    font-size: 3.5vw;
+  }
+  .startCard p {
+    font-size: 2.9vw;
+    max-width: 88%;
+    line-height: 3vw;
+  }
+  /*#endregion*/
+
+  /*#region PROFESSION */
+  #profession {
+    height: 140vw;
+    width: 84vw;
+  }
+  #professionComment {
+    display: block;
+    position: absolute;
+    margin: 120vw 0 0 40vw;
+    color: aliceblue;
+    opacity: 0.4;
+    max-width: 50vw;
+  }
+  #profession h1 {
+    font-size: 5.2vw;
+    margin-bottom: 6vw;
+  }
+  #professionCards {
+    gap: 1vw;
+    margin-bottom: 20vw;
+  }
+  .professionCard {
+    gap: 3vw;
+    width: 100%;
+  }
+  .professionCard p {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  .professionCard h2 {
+    font-size: 3.8vw;
+  }
+
+  .professionCard img {
+    width: 15vw;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+  }
+  /*#endregion*/
+
+  /*#region PARTNERS*/
+  #partners {
+    width: 84vw;
+    height: 80vw;
+    gap: 7vw;
+  }
+  #partnersHeading h1 {
+    font-size: 4.5vw;
+    letter-spacing: 0.2vw;
+  }
+  #partnersHeading img {
+    width: 16vw;
+  }
+  #partnersCards {
+    height: 39vw;
+    margin-bottom: 8vw;
+  }
+  .partnersCard {
+    width: 20.82971vw;
+    height: 20vw;
+  }
+  #partnersCards img:nth-child(1) {
+    width: 19vw;
+  }
+  #partnersCards img:nth-child(2) {
+    width: 10vw;
+  }
+  /*#endregion*/
+}
+/*#endregion*/

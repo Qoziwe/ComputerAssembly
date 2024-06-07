@@ -19,6 +19,11 @@
           <a href="">Контакты</a>
         </div>
         <button>Зайти в кабинет</button>
+        <div id="headerNavbar">
+          <button>
+            <img src="./images/align-justify-svgrepo-com.png" alt="" />
+          </button>
+        </div>
       </header>
       <div class="welcomeBanner">
         <h1>
@@ -60,7 +65,7 @@
           <h1>190</h1>
         </div>
       </div>
-      <div class="courseFlexBox" style="row-gap: 0.4vw">
+      <div class="courseFlexBox courseFlexBox2" style="row-gap: 0.4vw">
         <div class="courseEarned">
           <p>Заработано учениками:</p>
           <h1>80 000$</h1>
@@ -81,9 +86,8 @@
           id="activitiesComputerImg"
           src="./images/imagecomputer2.png"
           alt=""
-          style="width: 24vw"
         />
-        <img src="./images/Rectangle 25.png" alt="" style="width: 28vw" />
+        <img src="./images/Rectangle 25.png" alt="" />
       </div>
       <div id="activitiesText">
         <h1>Чем мы занимаемся?</h1>
@@ -103,14 +107,10 @@
     <section id="start">
       <div id="startText">
         <div id="startTextLogo">
-          <img
-            src="./images/Ellipse 1 (Stroke).png"
-            alt=""
-            style="width: 4.1vw"
-          />
-          <h1 style="font-size: 2.4vw; letter-spacing: 0.2vw">Быстрый Старт</h1>
+          <img src="./images/Ellipse 1 (Stroke).png" alt="" />
+          <h1>Быстрый Старт</h1>
         </div>
-        <p style="max-width: 20vw; font-size: 0.89vw">
+        <p>
           Больше 90% учеников прошли курс и смогли собрать свой первый компьютер
         </p>
       </div>
@@ -208,11 +208,14 @@
     </section>
 
     <section id="profession">
-      <h1 style="font-size: 2.7vw">Получите профессию прямо сейчас</h1>
+      <p id="professionComment">
+        ↑ тут должна быть карусель, и было бы красиво, но мне лень ее делать
+      </p>
+      <h1>Получите профессию прямо сейчас</h1>
       <div id="professionCards">
         <div class="professionCard">
           <img src="./images/icon-1.png" alt="" />
-          <h1>Только практические навыки в работе</h1>
+          <h2>Только практические навыки в работе</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
             vitae facilis, nulla adipisci unde quasi in natus aut? Aperiam fugit
@@ -222,7 +225,7 @@
         </div>
         <div class="professionCard">
           <img src="./images/icon-2.png" alt="" />
-          <h1>Работа на самом современном оборудовании</h1>
+          <h2>Работа на самом современном оборудовании</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
             vitae facilis, nulla adipisci unde quasi in natus aut? Aperiam fugit
@@ -232,7 +235,7 @@
         </div>
         <div class="professionCard">
           <img src="./images/icon-3.png" alt="" />
-          <h1>Сертификация по окончании обучения</h1>
+          <h2>Сертификация по окончании обучения</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
             vitae facilis, nulla adipisci unde quasi in natus aut? Aperiam fugit
@@ -245,10 +248,8 @@
 
     <section id="partners">
       <div id="partnersHeading">
-        <img src="./images/icon-heading.png" alt="" style="width: 7vw" />
-        <h1 style="font-size: 2.4vw; letter-spacing: 0.2vw">
-          Партнеры - топовые бренды
-        </h1>
+        <img src="./images/icon-heading.png" alt="" />
+        <h1>Партнеры - топовые бренды</h1>
       </div>
 
       <div id="partnersCards">
@@ -265,7 +266,7 @@
             border-bottom: 0.02vw solid rgba(240, 248, 255, 0.582);
           "
         >
-          <img src="./images/TSMCLogopng.png" alt="" style="width: 6vw" />
+          <img src="./images/TSMCLogopng.png" alt="" style="width: 6vw; @media (max-width: 700px) {width: ;}" />
         </div>
         <div
           class="partnersCard"
@@ -466,12 +467,7 @@
         <a href=""><img src="./images/Ellipse 4footer.png" alt="" /></a>
         <a href=""><img src="./images/Ellipse 5footer.png" alt="" /></a>
         <a href=""><img src="./images/Ellipse 6footer.png" alt="" /></a>
-        <p>Тут в кругляшках должны были быть логотипы соц. сетей</p>
-        <img
-          src="./images/line.png"
-          alt=""
-          style="position: absolute; margin-left: 25vw; opacity: 0.4"
-        />
+        <p>← Тут в кругляшках должны были быть логотипы соц. сетей</p>
       </div>
     </section>
   </body>
